@@ -1,0 +1,81 @@
+
+.tippy-content {
+	display: grid;
+	width: 400px;
+	grid-gap: 3px;
+	padding-right: 20px;
+	padding-left: 20px;
+	background-color: white;
+	color: black;
+	grid-template-rows: 60px 150px 20px;
+	grid-template-areas: 'logo name name industry' 'price price stats stats' 'disclaimer disclaimer disclaimer stiqur';
+	border-radius: 4px;
+	box-shadow: 0px 0px 1px 1px rgb(0, 0, 0, .25);
+}
+
+.company_logo {
+	margin-top: 6px;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+}
+
+.tippy-content div:nth-child(1) {
+	grid-area: logo;
+}
+
+.tippy-content div:nth-child(2) {
+	padding-top: 14px;
+	grid-area: name;
+	line-height: 2;
+	text-align: center;
+	padding-left: 3px;
+}
+
+.tippy-content div:nth-child(3) {
+	padding-top: 14px;
+	grid-area: industry;
+}
+
+.tippy-content div:nth-child(3) span {
+	float: right;
+	background-color: #75a1ef;
+	color: white;
+	padding: 3px;
+	white-space: nowrap;
+	border-radius: 2px;
+}
+
+.tippy-content div:nth-child(4) {
+	padding-top: 20px;
+	grid-area: price;
+	text-align: left;
+	line-height: 1.1;
+}
+
+.tippy-content div:nth-child(5) {
+	grid-area: stats;
+	padding-left: 10px;
+	font-weight: bold;
+	text-align: left;
+	list-style: none;
+}
+
+.tippy-content div:nth-child(6) {
+	grid-area: disclaimer;
+	text-align: left;
+	padding-top: 4px;
+}
+
+.tippy-content div:nth-child(7) {
+	grid-area: stiqur;
+}
+
+.stiqur_logo {
+	width: 30px;
+	background-size: cover;
+	background-position: center;
+	transform: scale(3);
+	vertical-align: middle;
+	float: right;
+}

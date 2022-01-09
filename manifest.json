@@ -1,0 +1,43 @@
+{
+    "manifest_version": 2,
+    "name": "Ticksy",
+    "description": "See real-time stock prices by hovering over Cashtags.",
+    "version": "1.2.0",
+    "icons": {
+        "32": "favicon-32x32.png"
+    },
+    "browser_action": {
+        "default_title": "Ticksy",
+        "default_popup": "popup.html",
+        "default_icon": {
+            "32": "favicon-32x32.png"
+        }
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "http://www.twitter.com/*",
+                "https://twitter.com/*"
+            ],
+            "js": [
+                "popup/dom-to-image.min.js",
+                "popup/popup.js",
+                "popup/iex_api.js",
+                "stiqur.js"
+            ],
+            "css": ["popup/popup.css"],
+            "run_at": "document_idle"
+        }
+    ],
+    "web_accessible_resources": [
+        "popup/stiqur_logo_fit.png",
+        "popup/stiqur_load.svg",
+        "popup/twitter.svg",
+        "*.woff2","*.woff"
+    ],
+    "permissions": [
+        "http://twitter.com/",
+        "https://twitter.com/",
+        "storage"
+    ]
+}

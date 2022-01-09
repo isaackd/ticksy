@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stiqur</title>
+    <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+<body>
+
+    <!-- <img id="bg" src="bg.png"> -->
+
+    <span id="test-link">test link</span>
+
+    <script type="text/javascript" src="popup/iex_api.js"></script>
+    <script type="text/javascript" src="popup/popup.js"></script>
+
+    <script type="text/javascript" src="stiqur.js"></script>
+
+    <script type="text/javascript">
+        
+        const popup = new StiqurPopup(document.body);
+        popup.fetchAndLoadSymbol("AAPL");
+
+        setTimeout(() => {
+            // popup.clearData();
+            const el = document.getElementById("test-link");
+
+            popup.open();
+            popup.positionAroundElement(el);
+        }, 1);
+
+    </script>
+
+    <style type="text/css">
+
+        body {
+            background-color: #15202b;
+        }
+
+        #bg {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+
+            width: 2560px;
+            height: 1440px;
+            z-index: -1;
+        }
+
+        #test-link {
+            position: absolute;
+
+            left: 100px;
+            top: 100px;
+
+            color: steelblue;
+
+            z-index: 2;
+        }
+    </style>
+</body>
+</html>

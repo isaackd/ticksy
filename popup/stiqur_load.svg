@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="stiqur.svg"
+   inkscape:version="1.0 (1.0+r73+1)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 14.804349 32.968857"
+   height="124.6067"
+   width="55.953445">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     units="px"
+     fit-margin-bottom="0"
+     fit-margin-right="0"
+     fit-margin-left="0"
+     fit-margin-top="0"
+     inkscape:window-maximized="1"
+     inkscape:window-y="0"
+     inkscape:window-x="0"
+     inkscape:window-height="1375"
+     inkscape:window-width="2560"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="px"
+     inkscape:cy="48.299062"
+     inkscape:cx="34.876699"
+     inkscape:zoom="5.6568543"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+
+  <path
+       sodipodi:nodetypes="ccsccccccccccccccccccccccccccccscccccc"
+       id="path24"
+       d="m 9.6265034,4.85953 c -1.748367,1.7e-4 -3.475567,0.31775 -4.995333,1.22369 -2.873756,1.71314 -4.73896297,5.45109 -2.934801,8.59764 0.658622,1.14868 1.884849,1.90052 3.019467,2.51384 0.417153,0.22555 1.461178,0.45441 1.676316,0.89611 0.163576,0.33596 -0.144526,1.06748 -0.227161,1.41605 -0.287359,1.21158 -0.604689,2.42062 -0.856488,3.640666 l -3.048,-2.116666 c -0.487765,0.85598 -1.132755,1.6527 -1.70527097,2.455336 -0.186182,0.26077 -0.608923,0.66717 -0.549572,1.016 0.166116,0.97536 2.11471997,2.01422 2.93217597,2.38252 0.312928,0.14054 1.089745,0.27432 1.24223,0.60621 0.158919,0.34629 -0.149352,1.06257 -0.236982,1.41393 -0.316315,1.26746 -0.566166,2.55186 -0.920581,3.81 l 2.116667,0.254 1.185333,-5.24933 c 1.529165,0 2.954867,-0.21844 4.3179996,-0.95758 3.137747,-1.70095 5.33908,-5.700606 3.4798,-9.117746 -0.590127,-1.08425 -1.639993,-1.87706 -2.7178,-2.43349 C 10.976428,14.98981 9.8491764,14.70135 9.6542744,14.2395 9.5088164,13.89473 9.7833904,13.2489 9.8697504,12.90286 10.122226,11.89169 10.473,10.8088 10.557836,9.7702 l 2.116667,1.016 2.116667,-4.65667 C 13.854756,5.69138 12.781014,5.28295 11.74317,5.1982 L 12.843836,0.1182 10.93291,0 10.484176,1.21886 9.6265034,4.85953 m -1.016014,4.14867 -1.016,4.572 c -1.453981,-0.49513 -3.81889,-2.06579 -2.34188,-3.80662 0.201591,-0.23757 0.458555,-0.42375 0.733213,-0.56828 0.842857,-0.44365 1.728724,-0.20455 2.624667,-0.1971 m -1.27001,14.731956 1.100667,-4.910666 c 1.6547246,0.31911 3.3599956,2.34019 2.0138806,3.89382 -0.8020466,0.925406 -1.9738336,1.016846 -3.1145476,1.016846 z"
+       style="fill:#6495ed;fill:lightgray;stroke:none;stroke-width:0.0846667" />
+
+  <clipPath id="myClip">
+    <use href="#path24" />
+  </clipPath>
+
+  <rect width="100%" height="80%" y="-100%" clip-path="url(#myClip)" fill="#6495ed">
+    <animate attributeName="y" values="100%;-80%;" dur="1.5s" repeatCount="indefinite"></animate>
+  </rect>
+
+</svg>

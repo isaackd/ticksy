@@ -1,0 +1,356 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Bold.woff2') format('woff2'),
+        url('Roboto-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-BlackItalic.woff2') format('woff2'),
+        url('Roboto-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Black.woff2') format('woff2'),
+        url('Roboto-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-BoldItalic.woff2') format('woff2'),
+        url('Roboto-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Italic.woff2') format('woff2'),
+        url('Roboto-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Light.woff2') format('woff2'),
+        url('Roboto-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-LightItalic.woff2') format('woff2'),
+        url('Roboto-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Medium.woff2') format('woff2'),
+        url('Roboto-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-MediumItalic.woff2') format('woff2'),
+        url('Roboto-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Regular.woff2') format('woff2'),
+        url('Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Thin.woff2') format('woff2'),
+        url('Roboto-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-ThinItalic.woff2') format('woff2'),
+        url('Roboto-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+ 
+#stiqur-popup * {
+font-family: 'TwitterChirp' !important;    
+}
+#stiqur-popup {
+    position: fixed;
+    width: 400px;
+    font-family: 'TwitterChirp' !important;
+    background-color: white;
+    overflow: hidden;
+    visibility: hidden;
+    border: 1px solid lightgray;
+    border-radius: 16px;
+    transition: 200ms height;
+}
+
+#stiqur-popup.loading {
+    width: 400px;
+}
+
+#stiqur-popup:not(.loading) #loader-container {
+    display: none;
+}
+
+#stiqur-popup.data-unavailable #content-container {
+    display: none;
+}
+
+#stiqur-popup.data-unavailable #error-container {
+    display: block;
+}
+
+#stiqur-popup #error-container {
+    display: none;
+    user-select: none;
+    padding: 1rem 2rem;
+}
+
+#stiqur-popup .error-header {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+#stiqur-popup .error-text {
+    font-size: 0.7rem;
+    color: #555;
+}
+
+#stiqur-popup.loading #content-container {
+    display: none;
+}
+
+#stiqur-popup #loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#stiqur-popup #loader {
+    width: 20px;
+    margin: 1rem;
+}
+
+#stiqur-popup span {
+    display: block;
+}
+
+
+/* HEADER AREA */
+
+#stiqur-popup .header {
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 0.8rem 0px 0px;
+    /*border-bottom: 1px solid lightgray;*/
+}
+
+#stiqur-popup .header.no-logo #logo-container {
+    display: none;
+}
+
+#stiqur-popup .header.no-logo .company-identifier {
+    margin-left: 1.5rem;
+}
+
+#stiqur-popup .company-identifier {
+    display: block;
+    /*margin-top: 0.5rem;*/
+    padding-right: 1em;
+    flex: 100;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#stiqur-popup #logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    max-width: 50px;
+    max-height: 50px;
+    margin: 0 0.8rem;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#stiqur-popup .company-logo {
+    width: 100%;
+    box-sizing: border-box;
+    user-select: none;
+    transition: opacity 200ms ease-in-out;
+}
+
+#stiqur-popup .company-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+    flex: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#stiqur-popup .symbol {
+    color: #666;
+    font-size: 0.7rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#stiqur-popup .company-industry {
+    padding: 0.3rem;
+    /*border-radius: 100px;*/
+    /*align-self: flex-start;*/
+    font-size: 0.7rem;
+    background-color: #eee;
+    /*text-align: center;*/
+}
+
+#stiqur-popup .share-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    padding: 0.3rem 0.65rem 0.3rem 0.4rem;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+    font-size: 0.7rem;
+    background-color: #e6e6e6;
+    cursor: pointer;
+    transition: background-color 200ms;
+}
+
+#stiqur-popup .share-button:hover {
+    background-color: #eee;
+}
+
+#stiqur-popup .twitter-logo {
+    width: 20px;
+}
+
+
+/* CONTENT AREA */
+
+#stiqur-popup .content {
+    display: grid;
+    grid-template-columns: minmax(50%, auto) auto;
+}
+
+#stiqur-popup .stats {
+    padding: 0;
+    margin: 0.4rem;
+}
+
+#stiqur-popup .price-container {
+    --price-font-size: 2.5rem;
+    --change-font-size: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#stiqur-popup .price {
+    font-size: var(--price-font-size);
+    font-weight: bold;
+    margin: 0;
+}
+
+#stiqur-popup .price.reduced {
+    font-size: 2rem;
+}
+
+#stiqur-popup .price-change {
+    color: green;
+    margin: 0;
+    font-size: var(--change-font-size);
+    white-space: nowrap;
+}
+
+#stiqur-popup .price-change.down {
+    color: red;
+}
+
+#stiqur-popup .stat-title {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #555;
+    font-weight: normal;
+}
+
+#stiqur-popup .stat {
+    margin: 0;
+    margin-bottom: 0.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#stiqur-popup .stats .stat:last-child {
+    margin: 0;
+}
+
+
+/* FOOTER AREA */
+
+#stiqur-popup .footer {
+    display: flex;
+    /*justify-content: space-between;*/
+    align-items: center;
+    /*border-top: 1px solid lightgray;*/
+    padding: 0.4rem 1.5rem;
+}
+
+#stiqur-popup .stiqur-logo {
+    width: 30px;
+    margin-left: auto;
+}
+
+#stiqur-popup .attribution {
+    color: #555;
+    font-size: 0.5rem;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+#stiqur-popup .attribution:hover {
+    text-decoration: underline;
+}
